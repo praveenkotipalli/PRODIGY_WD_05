@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="gif-background">
+        <img src="https://i.pinimg.com/originals/8c/7d/f9/8c7df9ff33dc7b26613a4154516833c3.gif" alt="GIF Background" id="gif-bg">
+    </div>
+    
+    <div class="weather-app">
+        <div class="search-container">
+            <i class="fas fa-search" id="search-icon"></i>
+            <input type="text" id="search-bar" placeholder="Enter location...">
+        </div>
+        <div class="main-card">
+            <div class="date-location">
+                <h2 id="day">Tuesday</h2>
+                <p id="date">15 Jan 2019</p>
+                <p id="location">Paris, FR</p>
+            </div>
+            <div class="temperature">
+                <h1 id="temp">29°C</h1>
+                <p id="weather">Sunny</p>
+            </div>
+        </div>
+        <div class="info-card">
+            <div class="extra-info">
+                <p>PRECIPITATION <span id="precipitation">0%</span></p>
+                <p>HUMIDITY <span id="humidity">34%</span></p>
+                <p>WIND <span id="wind">0 km/h</span></p>
+            </div>
+            <div class="forecast">
+                <div class="day" id="day1">
+                    <p>Tue</p>
+                    <p>29°C</p>
+                </div>
+                <div class="day" id="day2">
+                    <p>Wed</p>
+                    <p>21°C</p>
+                </div>
+                <div class="day" id="day3">
+                    <p>Thu</p>
+                    <p>08°C</p>
+                </div>
+                <div class="day" id="day4">
+                    <p>Fri</p>
+                    <p>19°C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* styles.css */
+.gif-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+
+#gif-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Optional: Ensures the GIF covers the entire container */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2a2a2a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(238, 237, 237, 0.5);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.weather-app img{
+    opacity: 30%;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#search-bar {
+    width: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    transition: width 0.5s ease;
+    font-size: 16px;
+    outline: none;
+    opacity: 0;
+}
+
+.search-container:hover #search-bar {
+    width: 80%;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.main-card, .info-card {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.main-card .date-location h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.main-card .date-location p {
+    margin: 5px 0;
+}
+
+.main-card .temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-card .temperature h1 {
+    font-size: 64px;
+    margin: 0;
+}
+
+.main-card .temperature p {
+    margin: 5px 0;
+    font-size: 24px;
+}
+
+.info-card .extra-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.info-card .extra-info p {
+    margin: 0;
+}
+
+.info-card .forecast {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.info-card .forecast .day {
+    text-align: center;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+}
+
+.error-message {
+    color: red;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    .main-card, .info-card {
+        width: 500px;
+    }
+}
